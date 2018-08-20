@@ -1,4 +1,4 @@
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -9,7 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
 
 // NGX Boostrap
-import { BsDropdownModule, TabsModule } from 'ngx-bootstrap';
+import { BsDropdownModule, TabsModule, BsDatepickerModule } from 'ngx-bootstrap';
 
 // Sevices
 import { AuthService } from './services/auth.service';
@@ -55,7 +55,9 @@ import { ErrorInterceptorProvider } from './services/error.interceptor';
     imports: [
         BrowserModule,
         FormsModule,
+        ReactiveFormsModule,
         BsDropdownModule.forRoot(),
+        BsDatepickerModule.forRoot(),
         TabsModule.forRoot(),
         RouterModule.forRoot(approutes),
         HttpClientModule,
