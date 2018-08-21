@@ -34,6 +34,7 @@ import { PreventUnsavedChanges } from './guards/prevent-unsaved-changes.guard';
 import { PhotoEditorComponent } from './members/photo-editor/photo-editor.component';
 import { FileUploadModule } from 'ng2-file-upload';
 import { ErrorInterceptorProvider } from './services/error.interceptor';
+import { TimeAgoPipe } from 'time-ago-pipe';
 
 
 
@@ -50,7 +51,8 @@ import { ErrorInterceptorProvider } from './services/error.interceptor';
         MemberCardComponent,
         MemberDetailComponent,
         MemberEditComponent,
-        PhotoEditorComponent
+        PhotoEditorComponent,
+        TimeAgoPipe
     ],
     imports: [
         BrowserModule,
