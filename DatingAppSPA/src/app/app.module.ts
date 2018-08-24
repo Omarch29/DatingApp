@@ -9,7 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
 
 // NGX Boostrap
-import { BsDropdownModule, TabsModule, BsDatepickerModule } from 'ngx-bootstrap';
+import { BsDropdownModule, TabsModule, BsDatepickerModule, PaginationModule, ButtonsModule  } from 'ngx-bootstrap';
 
 // Sevices
 import { AuthService } from './services/auth.service';
@@ -58,6 +58,8 @@ import { TimeAgoPipe } from 'time-ago-pipe';
         BrowserModule,
         FormsModule,
         ReactiveFormsModule,
+        ButtonsModule.forRoot(),
+        PaginationModule.forRoot(),
         BsDropdownModule.forRoot(),
         BsDatepickerModule.forRoot(),
         TabsModule.forRoot(),
